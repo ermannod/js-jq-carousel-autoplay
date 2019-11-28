@@ -1,10 +1,5 @@
 $(document).ready(function() {
-
-  //action performed when clicking right arrow => moves to the next right image and next right bullet point
-
-
-
-
+// Slides to next IMG automatically
   var clock = setInterval(function(){
     var rightArrow = $("img.active");
     var nextImg = rightArrow.next("img");
@@ -19,6 +14,9 @@ $(document).ready(function() {
     currBull.removeClass("active");
     nextBull.addClass("active");
   }, 3000);
+
+
+  //action performed when clicking right arrow => moves to the next right image and next right bullet point
 
   $(".right").click(function(){
     var rightArrow = $("img.active");
